@@ -8,3 +8,78 @@
 		background:red;
 	}
 }
+
+
+.container{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	align-items:center;
+}
+.boite{
+	height:200px;
+	width:200px;
+	background-color:black;
+	flex-grow:1;
+	color:grey;
+	font-size:5em;
+	text-align:center;
+}
+.boite:nth-child(odd){
+	background-color:white;
+}
+.boite:nth-child(1){
+	order:1;
+}
+.boite:nth-child(2){
+	order:2;
+}
+.boite:nth-child(3){
+	order:3;
+}
+.boite:nth-child(4){
+	order:4;
+}
+.boite:nth-child(5){
+	order:5;
+}
+.boite:nth-child(6){
+	order:6;
+}
+.boite:nth-child(7){
+	order:7;
+}
+.boite:nth-child(8){
+	order:8;
+}
+.boite:nth-child(9){
+	order:9;
+}
+.boite:nth-child(10){
+	order:10;
+}
+.boite:nth-child(11){
+	order:11;
+}
+.boite:nth-child(12){
+	order:12;
+}
+.boite:nth-child(13){
+	order:13;
+}
+.boite:nth-child(14){
+	order:14;
+}
+.boite:nth-child(15){
+	order:15;
+}
+.boite:nth-child(16){
+	order:16;
+}
+.boite:nth-child(17){
+	order:17;
+}
+.boite:nth-child(18){
+	order:18;
+}
