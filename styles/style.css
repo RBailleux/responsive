@@ -1,85 +1,80 @@
-@media screen and (max-width: 480px){
-	body{
-		background:blue;
-	}
-}
-@media screen and (min-width: 480px){
-	body{
-		background:red;
-	}
-}
-
-
-.container{
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	align-items:center;
-}
-.boite{
-	height:200px;
-	width:200px;
-	background-color:black;
-	flex-grow:1;
-	color:grey;
-	font-size:5em;
-	text-align:center;
-}
-.boite:nth-child(odd){
+/* @media screen and (min-width: 480px){ */
+/* 	body{ */
+/* 		background:red; */
+/* 	} */
+/* } */
+body{
 	background-color:white;
 }
-.boite:nth-child(1){
+header,#content,footer{
+	margin:0 auto;
+}
+header{
+	max-height:513px;
+	background-image:url("images/startrek.jpg");
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+#intro{
+	text-align:center;
+}
+.row-img{
+	display:flex;
+	width:100%;
+	height:390px;
+	justify-content: space-around;
+	flex-grow:1;
+}
+.row-img .img{
+	background-size:contain;
+	background-repeat: no-repeat;
+	height:100%;
+	width:80%;
+}
+.row-img .img.team1{
+	background-image:url("images/team1.png");
+}
+.row-img .img.espace{
+	background-image:url("images/espace.png");
+}
+.row-img:nth-child(odd) .text{
 	order:1;
 }
-.boite:nth-child(2){
+.row-img:nth-child(odd) .img{
 	order:2;
+	align-self: flex-end;
+	background-position:right;
 }
-.boite:nth-child(3){
-	order:3;
+.row-img .img.team{
+	background-image:url("images/team.png");
 }
-.boite:nth-child(4){
-	order:4;
+.row-img .text{
+	max-width:20%;
+	text-align:justify;
 }
-.boite:nth-child(5){
-	order:5;
+.row-img .text p{
+	max-width:80%;
+	margin:0 auto;
+	display:block;
 }
-.boite:nth-child(6){
-	order:6;
+
+#team{
+	
 }
-.boite:nth-child(7){
-	order:7;
+#team .intro{
+	text-align:center;
 }
-.boite:nth-child(8){
-	order:8;
+#team .team-list{
+	list-style-type:none;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	max-width:80%;
+	margin:0 auto;
+	align-items:center;
 }
-.boite:nth-child(9){
-	order:9;
-}
-.boite:nth-child(10){
-	order:10;
-}
-.boite:nth-child(11){
-	order:11;
-}
-.boite:nth-child(12){
-	order:12;
-}
-.boite:nth-child(13){
-	order:13;
-}
-.boite:nth-child(14){
-	order:14;
-}
-.boite:nth-child(15){
-	order:15;
-}
-.boite:nth-child(16){
-	order:16;
-}
-.boite:nth-child(17){
-	order:17;
-}
-.boite:nth-child(18){
-	order:18;
+#team .team-list .team-member .name{
+	text-align:center;
+	font-weight:bold;
 }
