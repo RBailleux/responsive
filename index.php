@@ -9,11 +9,21 @@
   </head>
   <body>
   	<header>
-  	
+  		<nav>
+		  <ul>
+		    <li><a href="#Apropos">&Agrave; propos</a></li>
+		    <li><a href="#STTNG">ST-TNG</a></li>
+		    <li><a href="#Enterprise">Enterprise</a></li>
+		    <li><a href="#STOS">ST-OS</a></li>
+		    <li><a href="#team">Team</a></li>
+		    <li><a href="#Carte">Carte</a></li>
+		    <li><a href="#Footer">Footer</a></li>
+		  </ul>
+		</nav>
   	</header>
   	<section id="content">
   		<div id="intro">
-  			<h1>Lorem ipsum</h1>
+  			<h1 id="Apropos">Lorem ipsum</h1>
   			<p class="intro-text">
   				Victus universis caro ferina est lactisque abundans copia qua sustentantur, 
   				et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos 
@@ -30,30 +40,24 @@
 				capite vel multatione bonorum aut insulari solitudine damnabatur.
   			</p>
   		</div>
-  		<div class="row-img">
-  			<div class="img team1">
-  			
-  			</div>
+  		<div id="STTNG"class="row-img">
+  			<div class="img team1"></div>
   			<div class="text">
   				<p>
   					Consurgentem terrebat distarent tutela rati et intempestivum cum distarent bene poterat locari et qui alacriter ductores scuta tutela habitus poterat subire iam tutela pertinax concitat miles locari parans solido scuta.
   				</p>
   			</div>
   		</div>
-  		<div class="row-img">
-  			<div class="img espace">
-  			
-  			</div>
+  		<div id="Enterprise" class="row-img">
+  			<div class="img espace"></div>
   			<div class="text">
   				<p>
   					Consurgentem terrebat distarent tutela rati et intempestivum cum distarent bene poterat locari et qui alacriter ductores scuta tutela habitus poterat subire iam tutela pertinax concitat miles locari parans solido scuta.
   				</p>
   			</div>
   		</div>
-  		<div class="row-img">
-  			<div class="img team">
-  			
-  			</div>
+  		<div id="STOS" class="row-img">
+  			<div class="img team"></div>
   			<div class="text">
   				<p>
   					Consurgentem terrebat distarent tutela rati et intempestivum cum distarent bene poterat locari et qui alacriter ductores scuta tutela habitus poterat subire iam tutela pertinax concitat miles locari parans solido scuta.
@@ -221,8 +225,11 @@
   				</li>
   			</ul>
   		</div>
+  		<div id="Carte">
+  			
+  		</div>
   	</section>
-  	<footer>
+  	<footer id="Footer">
   		
   	</footer>
   </body>

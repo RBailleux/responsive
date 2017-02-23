@@ -5,60 +5,74 @@
 /* } */
 body{
 	background-color:white;
+	margin:0;
 }
 header,#content,footer{
 	margin:0 auto;
 }
 header{
-	max-height:513px;
+	height:100vh;
 	background-image:url("images/startrek.jpg");
-	background-size:contain;
+	background-position:center;
+	background-size:cover;
 	background-repeat: no-repeat;
 }
 
+header nav ul{
+	padding-top:40px;
+	margin:0 auto;
+	width:70%;
+	list-style-type:none;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+}
+header nav ul li a{
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+}
 #intro{
 	text-align:center;
+	padding:0 20%;
 }
 .row-img{
 	display:flex;
-	width:100%;
-	height:390px;
-	justify-content: space-around;
-	flex-grow:1;
+	flex-wrap:wrap;
+	flex-direction:row;
 }
 .row-img .img{
-	background-size:contain;
-	background-repeat: no-repeat;
-	height:100%;
+	height:80vh;
 	width:80%;
+	background-position:center;
 }
-.row-img .img.team1{
-	background-image:url("images/team1.png");
+
+.row-img:nth-child(odd){
+	flex-direction:row-reverse;
 }
-.row-img .img.espace{
-	background-image:url("images/espace.png");
-}
-.row-img:nth-child(odd) .text{
-	order:1;
-}
-.row-img:nth-child(odd) .img{
-	order:2;
-	align-self: flex-end;
-	background-position:right;
-}
-.row-img .img.team{
-	background-image:url("images/team.png");
-}
+
 .row-img .text{
 	max-width:20%;
 	text-align:justify;
 }
 .row-img .text p{
-	max-width:80%;
-	margin:0 auto;
-	display:block;
+	padding:0 20%;
 }
 
+.row-img .img.team1{
+	background-image:url("images/team1.png");
+	background-size:cover;
+}
+.row-img .img.espace{
+	background-image:url("images/espace.png");
+	background-size:cover;
+}
+.row-img .img.team{
+	background-image:url("images/team.png");
+	background-size:cover;
+}
 #team{
 	
 }
@@ -69,12 +83,30 @@ header{
 	list-style-type:none;
 	display:flex;
 	flex-wrap:wrap;
-	justify-content: space-around;
-	max-width:80%;
+	justify-content: space-between;
 	margin:0 auto;
 	align-items:center;
+}
+#team .team-list li{
+	width:20%;
 }
 #team .team-list .team-member .name{
 	text-align:center;
 	font-weight:bold;
+}
+#Carte{
+	width:100vw;
+	height:80vh;
+	background-image:url("images/carte.png");
+	background-size:cover;
+	background-position:center;
+}
+
+@media screen and (max-width: 970px){
+	.row-img .img{
+		width:100%;
+	}
+		#team .team-list li{
+		width:30%;
+	}
 }
